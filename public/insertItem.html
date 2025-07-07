@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extração de Texto de Imagem</title>
+  <link rel="stylesheet" href="/css/insertItem.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Upload de Imagem (PNG, JPEG, JPG)</h1>
+    <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg" />
+    <div id="imagePreview"></div>
+    <button id="extractTextBtn">Extrair Texto</button>
+    <div id="loading">Processando imagem...</div>
+    <pre id="outputText"></pre>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/transformToJson.js"></script>
+</body>
+</html>

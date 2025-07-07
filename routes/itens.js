@@ -29,8 +29,15 @@ router.get('/matricula/:matricula', async (req, res) => {
   }
 });
 
+
+
 router.get('/', (req, res) => {
    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
+
+router.get('/insertItem', (req, res) => {
+   res.sendFile(path.join(__dirname, '..', 'public', 'insertItem.html'));
+});
+
 
 module.exports = router;
